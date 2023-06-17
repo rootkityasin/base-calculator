@@ -14,4 +14,8 @@ public class Main_controller {
     void do_exit(ActionEvent event) {
         System.exit(0);
     }
+    @FXML
+    void Binary_Button(ActionEvent event) {
+
+    }
 }
