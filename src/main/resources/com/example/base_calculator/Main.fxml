@@ -8,28 +8,28 @@
 
 <AnchorPane prefHeight="315.0" prefWidth="499.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.base_calculator.Main_controller">
    <children>
-      <TextField prefHeight="62.0" prefWidth="510.0" promptText="Place Decimal Input Here" />
-      <Label layoutX="5.0" layoutY="62.0" prefHeight="115.0" prefWidth="499.0" text="                       No Input" textAlignment="CENTER" textFill="#036863">
+      <TextField fx:id="input" onAction="#input" prefHeight="62.0" prefWidth="510.0" promptText="Place Decimal Input Here" />
+      <Label fx:id="output" layoutX="5.0" layoutY="62.0" prefHeight="115.0" prefWidth="499.0" text="                       No Input" textAlignment="CENTER" textFill="#036863">
          <font>
             <Font name="Arial Bold" size="29.0" />
          </font>
       </Label>
-      <Button layoutY="177.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="254.0" text="B">
+      <Button fx:id="Binary_Button" layoutY="177.0" mnemonicParsing="false" onAction="#Binary_Button" prefHeight="46.0" prefWidth="254.0" text="B">
          <font>
             <Font size="24.0" />
          </font>
       </Button>
-      <Button layoutX="256.0" layoutY="177.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="254.0" text="H">
+      <Button fx:id="hexa_button" layoutX="256.0" layoutY="177.0" mnemonicParsing="false" onAction="#hexa_button" prefHeight="46.0" prefWidth="254.0" text="H">
          <font>
             <Font size="24.0" />
          </font>
       </Button>
-      <Button layoutY="223.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="254.0" text="O">
+      <Button fx:id="octal_button" layoutY="223.0" mnemonicParsing="false" onAction="#octal_button" prefHeight="46.0" prefWidth="254.0" text="O">
          <font>
             <Font size="24.0" />
          </font>
       </Button>
-      <Button layoutX="256.0" layoutY="223.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="254.0" text="Next Screen">
+      <Button fx:id="next" layoutX="256.0" layoutY="223.0" mnemonicParsing="false" onAction="#next" prefHeight="46.0" prefWidth="254.0" text="Next Screen">
          <font>
             <Font size="24.0" />
          </font>
@@ -39,7 +39,7 @@
             <Font size="24.0" />
          </font>
       </Button>
-      <Button layoutX="256.0" layoutY="269.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="254.0" text="Clear">
+      <Button fx:id="clear_button" layoutX="256.0" layoutY="269.0" mnemonicParsing="false" onAction="#clear_button" prefHeight="46.0" prefWidth="254.0" text="Clear">
          <font>
             <Font size="24.0" />
          </font>
